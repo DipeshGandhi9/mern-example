@@ -25,7 +25,7 @@ export default class CreateExercise extends Component {
 
     componentDidMount() {
 
-        axios.get("http://localhost:5000/api/users/")
+        axios.get("/api/users/")
         .then((result) => {
             if(result.data.length > 0){
                 console.log(result.data);
@@ -77,7 +77,7 @@ export default class CreateExercise extends Component {
 
         console.log(exercise);
 
-        axios.post("http://localhost:5000/api/exercises/add", exercise)
+        axios.post("/api/exercises/add", exercise)
         .then((result) => {
             console.log(result.data);
         }).catch(error => {

@@ -25,7 +25,7 @@ export default class ExercisesList extends Component {
     }
 
     componentDidMount (){
-        axios.get("http://localhost:5000/api/exercises/")
+        axios.get("/api/exercises/")
         .then((result) => {
             if(result.data.length > 0){
                 console.log(result.data);
@@ -41,7 +41,7 @@ export default class ExercisesList extends Component {
     }
 
     deleteExercise (id){
-        axios.delete("http://localhost:5000/api/exercises/"+id)
+        axios.delete("/api/exercises/"+id)
         .then((result) => {
             console.log(result.data);
             this.setState({
