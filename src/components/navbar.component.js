@@ -8,7 +8,7 @@ class Navbar extends Component {
         return (
             <nav className="navbar navbar-dark bg-dark navbar-expand-lg" >
                 <div className="container">
-                    <Link to='/' className="navbar-brand"> J Invoicing </Link>
+                    <Link to='/' className="navbar-brand"> J Workbook </Link>
                     <div className="collpase navbar-collapse">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
